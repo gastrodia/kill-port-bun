@@ -23,7 +23,8 @@
     "index.d.ts",
     "package.json",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    ".gitattributes"
   ],
   "keywords": [
     "kill-port",

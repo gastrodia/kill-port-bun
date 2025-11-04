@@ -1,0 +1,14 @@
+# Ensure shell scripts and TypeScript files use LF line endings
+# This is critical for cross-platform compatibility
+*.ts text eol=lf
+*.js text eol=lf
+*.sh text eol=lf
+
+# Package and config files
+package.json text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+
+# Ensure all text files are normalized
+* text=auto eol=lf
+
