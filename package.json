@@ -1,6 +1,6 @@
 {
   "name": "kill-port-bun",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "A cross-platform CLI tool to kill processes using specific ports, powered by Bun",
   "main": "index.ts",
   "module": "index.ts",
@@ -12,13 +12,17 @@
     }
   },
   "bin": {
-    "kp": "./index.ts"
+    "kp": "./dist/cli.js"
   },
   "scripts": {
-    "dev": "bun run ./index.ts"
+    "dev": "bun run ./index.ts",
+    "build": "bun build src/cli.ts --target=bun --outfile dist/cli.js",
+    "prepublishOnly": "bun run build"
   },
   "types": "index.d.ts",
   "files": [
+    "src/lib.ts",
+    "dist/cli.js",
     "index.ts",
     "index.d.ts",
     "package.json",
